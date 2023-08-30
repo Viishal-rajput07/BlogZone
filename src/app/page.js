@@ -1,9 +1,10 @@
-"use client";
+
+import { Baloo_2 } from "next/font/google";
+const ballo2 = Baloo_2({ weight: "800", subsets: ["devanagari"] });
 
 export default function Home() {
-
   return (
-    <>
+    <div className={ballo2.className}>
       <div
         className="hero min-h-screen"
         style={{
@@ -24,6 +25,6 @@ export default function Home() {
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
 }
