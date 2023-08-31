@@ -5,8 +5,11 @@ import { useRouter } from "next/navigation";
 import Image from "next/image";
 import profile from "../../public/vis.jpg";
 import { Bricolage_Grotesque } from "next/font/google";
-const fts = Bricolage_Grotesque({weight:'200', subsets: ["latin"], display: 'swap'});
-
+const fts = Bricolage_Grotesque({
+  weight: "200",
+  subsets: ["latin"],
+  display: "swap",
+});
 
 export default function Navbar() {
   const router = useRouter();
@@ -22,7 +25,7 @@ export default function Navbar() {
             <Image
               className="rounded-full"
               src={profile}
-              height={40}
+              height={30}
               width={50}
             />
           </li>
@@ -46,7 +49,12 @@ export default function Navbar() {
           >
             Login
           </button>
-          <button className="btn btn-sm btn-error mx-5">Sign Up</button>
+          <button
+            className="btn btn-sm btn-error mx-5"
+            onClick={() => navigate("/users")}
+          >
+            Sign Up
+          </button>
         </div>
       </nav>
     </div>

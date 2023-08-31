@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
 
-function About() {
+export default function About() {
   return (
     <div>
       <h1 className="text-center text-4xl text-red-400">About page</h1>
@@ -26,4 +26,9 @@ function About() {
   );
 }
 
-export default About;
+export function generateMetadata() {
+  return {
+    title: "BlogZone - About",
+    description: "A place where Bloggers live",
+  };
+}
