@@ -52,3 +52,10 @@ const page = () => {
 };
 
 export default page;
+
+export function generateMetadata() {
+  return {
+    title: "BlogZone - Login",
+    description: "Login for the member of us",
+  };
+}

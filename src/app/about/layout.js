@@ -1,11 +1,6 @@
 import Link from "next/link";
 import React from "react";
 
-export const metadata = {
-  title: "BlogZone - About",
-  description: "A place where Bloggers live",
-};
-
 const layout = ({ children }) => {
   return (
     <div>

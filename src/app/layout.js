@@ -1,4 +1,4 @@
-"use client";
+// "use client";
 import "./globals.css";
 import { Roboto } from "next/font/google";
 import Navbar from "./Navbar";
@@ -13,7 +13,7 @@ export const metadata = {
 };
 
 export default function RootLayout({ children }) {
-  const pathname = usePathname();
+  // const pathname = usePathname();
   return (
     <html lang="en">
       <body className={roboto.className}>
